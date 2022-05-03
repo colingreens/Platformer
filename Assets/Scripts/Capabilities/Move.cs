@@ -30,7 +30,7 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction.x = input.RetrieveMoveInput();
+        direction.x = input.GetMoveInput();
         desiredVelocity = new Vector2(direction.x, 0f) * Mathf.Max(maxSpeed - ground.GetFriction(), 0f);
     }
 

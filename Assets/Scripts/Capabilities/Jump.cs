@@ -5,7 +5,8 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     [SerializeField] private InputController input = null;
-    [SerializeField, Range(0f, 10f)] private float jumpHeight = 3f;
+    [SerializeField, Range(0f, 10f)] private float maxJumpHeight = 4f;
+    [SerializeField, Range(0f, 10f)] private float minJumpHeight = 1f;
     [SerializeField, Range(0, 5)] private int maxAirJumps = 0;
     [SerializeField, Range(0f, 5)] private float downwardMovementMultiplier = 3f;
     [SerializeField, Range(0f, 5)] private float upwardMovementMultiplier = 1.7f;
@@ -18,7 +19,12 @@ public class Jump : MonoBehaviour
     private float defaultGravityScale;
 
     private bool desiredJump;
+    private bool jumpKeyHeld;
+    private bool isJumping;
     private bool onGround;
+
+    //private float maxJumpVelocity;
+    //private float minJumpVelocity;
 
     private void Awake()
     {
@@ -31,7 +37,8 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        desiredJump |= input.RetrieveJumpInput();
+        desiredJump |= input.GetJumpInput();
+        jumpKeyHeld |= input.GetJumpRelease();
     }
 
     private void FixedUpdate()
@@ -42,9 +49,10 @@ public class Jump : MonoBehaviour
         if (onGround)
         {
             jumpPhase = 0;
+            isJumping = false;
         }
 
-        if (desiredJump)
+        if (desiredJump && jumpKeyHeld)
         {
             desiredJump = false;
             JumpAction();
@@ -70,8 +78,9 @@ public class Jump : MonoBehaviour
     {
         if (onGround || jumpPhase < maxAirJumps)
         {
+            isJumping = true;
             jumpPhase += 1;
-            var jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * jumpHeight);
+            var jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * maxJumpHeight);
             if (velocity.y > 0f)
             {
                 jumpSpeed = Mathf.Max(jumpSpeed - velocity.y, 0f);

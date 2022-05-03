@@ -4,7 +4,11 @@ using UnityEngine;
 
 public abstract class InputController : ScriptableObject
 {
-    public abstract float RetrieveMoveInput();
+    public abstract float GetMoveInput();
 
-    public abstract bool RetrieveJumpInput();
+    public abstract float GetVerticalInput();
+
+    public abstract bool GetJumpInput();
+
+    public abstract bool GetJumpRelease();
 }
