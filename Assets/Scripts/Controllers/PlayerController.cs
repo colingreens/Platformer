@@ -20,6 +20,6 @@ public class PlayerController : InputController
 
     public override float GetVerticalInput()
     {
-        return Input.GetAxisRaw("Vertical");
+        return Input.GetAxisRaw("Vertical")
     }
 }

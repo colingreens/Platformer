@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof(RaycastController))]
+[RequireComponent (typeof(CollisionController))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private InputController inputController = null;
@@ -19,11 +17,11 @@ public class Player : MonoBehaviour
 
     Vector3 velocity;
 
-    RaycastController controller;
+    CollisionController controller;
 
     private void Start()
     {
-        controller = GetComponent<RaycastController>();
+        controller = GetComponent<CollisionController>();
 
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
