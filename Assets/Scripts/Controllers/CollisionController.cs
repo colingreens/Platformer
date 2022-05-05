@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class CollisionController : RaycastController
 {
-	float maxClimbAngle = 80;
-	float maxDescendedAngle = 75;
+    readonly float maxClimbAngle = 80;
+    readonly float maxDescendedAngle = 75;
 
 	public CollisionInfo collisions;
 
-	public void Move(Vector3 velocity)
+    public override void Start()
+    {
+		collider = GetComponent<CapsuleCollider2D>();
+		base.Start();
+    }
+
+    public void Move(Vector3 velocity, bool standingOnPlatform = false) //TODO:refactor this into it's own class
     {
 		UpdateRaycastOrigins();
 		collisions.Reset();
@@ -29,9 +35,12 @@ public class CollisionController : RaycastController
 		}        
 
 		transform.Translate(velocity);
-    }
 
-	
+        if (standingOnPlatform)
+        {
+			collisions.below = true;
+        }
+    }	
 
     private void ClimbSlope(ref Vector3 velocity, float slopeAngle)
     {
@@ -93,6 +102,11 @@ public class CollisionController : RaycastController
 
 			if (hit)
 			{
+                if (hit.distance == 0)
+                {
+					continue;
+                }
+
 				var slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
 				if (i == 0 && slopeAngle <= maxClimbAngle)
 				{

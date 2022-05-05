@@ -14,13 +14,11 @@ public class RaycastController : MonoBehaviour
 	public float verticalRaySpacing;
 
 	[HideInInspector]
-    public Collider2D collider;
+    public new Collider2D collider;
 	public RaycastOrigins raycastOrigins;
 
 	public virtual void Start()
 	{
-		collider = GetComponent<CapsuleCollider2D>();
-
 		CalculateRaySpacing();
 	}
 
@@ -37,7 +35,7 @@ public class RaycastController : MonoBehaviour
 
 	public void CalculateRaySpacing()
 	{
-		Bounds bounds = collider.bounds;
+		var bounds = collider.bounds;
 		bounds.Expand(skinWidth * -2);
 
 		horizontalRayCount = Mathf.Clamp(horizontalRayCount, 2, int.MaxValue);
