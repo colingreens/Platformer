@@ -10,6 +10,7 @@ public class CollisionController : RaycastController
     public override void Start()
     {
 		collider = GetComponent<CapsuleCollider2D>();
+		collisions.faceDirection = 1;
 		base.Start();
     }
 
@@ -19,17 +20,19 @@ public class CollisionController : RaycastController
 		collisions.Reset();
 		collisions.velocityOld = velocity;
 
+        if (velocity.x != 0)
+        {
+			collisions.faceDirection = (int)Mathf.Sign(velocity.x);
+        }
+
         if (velocity.y < 0)
         {
             DescendSlope(ref velocity);
         }
 
-        if (velocity.x != 0)
-        {
-			HorizontalCollisions(ref velocity);
-		}
+		HorizontalCollisions(ref velocity);
 
-        if (velocity.y != 0)
+		if (velocity.y != 0)
         {
 			VerticalCollisions(ref velocity);
 		}        
@@ -89,8 +92,13 @@ public class CollisionController : RaycastController
 
 	void HorizontalCollisions(ref Vector3 velocity)
 	{
-		var directionX = Mathf.Sign(velocity.x);
+		var directionX = collisions.faceDirection; ;
 		var rayLength = Mathf.Abs(velocity.x) + skinWidth;
+
+        if (Mathf.Abs(velocity.x) < skinWidth)
+        {
+			rayLength = 2 * skinWidth;
+        }
 
 		for (int i = 0; i < horizontalRayCount; i++)
 		{
@@ -198,6 +206,7 @@ public class CollisionController : RaycastController
 
 		public float slopeAngle, slopeAngleOld;
 		public Vector3 velocityOld;
+		public int faceDirection;
 
 		public void Reset()
         {
