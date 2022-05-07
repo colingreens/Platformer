@@ -1,212 +1,228 @@
-using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class PlatformController : RaycastController
-{    
-    public float speed;
-    public bool cyclic;
-    public float waitTime;
-    [Range(0,2)]
-    public float easeAmount;
-    public Vector3[] localWaypoints;
-    Vector3[] globalWaypoints;
+namespace Platformer.Controller
+{
+	public class PlatformController : RaycastController
+	{
 
-    public LayerMask passengerMask;
+		public LayerMask passengerMask;
 
-    int fromWayPointIndex;
-    float percentBetweenWaypoints;
-    float nextMoveTime;
+		public Vector3[] localWaypoints;
+		Vector3[] globalWaypoints;
 
-    List<PassengerMovement> passengerMovement;
-    readonly Dictionary<Transform, CollisionController> passengerDictionary = new Dictionary<Transform, CollisionController>();
-    
-    public override void Start()
-    {       
-        collider = GetComponent<BoxCollider2D>();
-        globalWaypoints = new Vector3[localWaypoints.Length];
-        for (int i = 0; i < localWaypoints.Length; i++)
-        {
-            globalWaypoints[i] = localWaypoints[i] + transform.position;
-        }
+		[Range(1, 6)]
+		public float speed;
+		public bool cyclic;
+		public float waitTime;
+		[Range(0, 2)]
+		public float easeAmount;
 
-        base.Start();
-    }
+		int fromWaypointIndex;
+		float percentBetweenWaypoints;
+		float nextMoveTime;
 
-    private void Update()
-    {
-        UpdateRaycastOrigins();
-        var velocity = CalculatePlatformMovement();
-        CalculatePassengerMovement(velocity);
+		List<PassengerMovement> passengerMovement;
+		Dictionary<Transform, Controller2D> passengerDictionary = new Dictionary<Transform, Controller2D>();
 
-        MovePassengers(true);
-        transform.Translate(velocity);
-        MovePassengers(false);
-    }
+		public override void Start()
+		{
+			base.Start();
 
-    private float Ease(float x)
-    {
-        var a = easeAmount + 1f;
-        return Mathf.Pow(x, a) / (Mathf.Pow(x, a) + Mathf.Pow(1 - x, a));
-    }
+			globalWaypoints = new Vector3[localWaypoints.Length];
+			for (int i = 0; i < localWaypoints.Length; i++)
+			{
+				globalWaypoints[i] = localWaypoints[i] + transform.position;
+			}
+		}
 
-    private Vector3 CalculatePlatformMovement()
-    {
-        if (Time.time < nextMoveTime)
-        {
-            return Vector2.zero;
-        }
-        
-        fromWayPointIndex %= globalWaypoints.Length;
-        var toWaypointIndex = (fromWayPointIndex + 1) % globalWaypoints.Length;
-        var distanceBetweenWaypoints = Vector3.Distance(globalWaypoints[fromWayPointIndex], globalWaypoints[toWaypointIndex]);
-        percentBetweenWaypoints += Time.deltaTime * speed/distanceBetweenWaypoints;
-        percentBetweenWaypoints = Mathf.Clamp01(percentBetweenWaypoints);
-        var easedPercentBetweenWaypoints = Ease(percentBetweenWaypoints);
+		void Update()
+		{
 
-        var newPos = Vector3.Lerp(globalWaypoints[fromWayPointIndex], globalWaypoints[toWaypointIndex], easedPercentBetweenWaypoints);
+			UpdateRaycastOrigins();
 
-        if (percentBetweenWaypoints >= 1)
-        {
-            percentBetweenWaypoints = 0;
-            fromWayPointIndex++;
+			Vector3 velocity = CalculatePlatformMovement();
 
-            if (!cyclic)
-            {
-                if (fromWayPointIndex >= globalWaypoints.Length - 1)
-                {
-                    fromWayPointIndex = 0;
-                    System.Array.Reverse(globalWaypoints);
-                }
-            }
-            nextMoveTime = Time.time + waitTime;
-        }
+			CalculatePassengerMovement(velocity);
 
-        return newPos - transform.position;
-    }
+			MovePassengers(true);
+			transform.Translate(velocity);
+			MovePassengers(false);
+		}
 
-    private void MovePassengers(bool beforeMovePlatform)
-    {
-        foreach (var passenger in passengerMovement)
-        {
-            if (!passengerDictionary.ContainsKey(passenger.Transform))
-            {
-                passengerDictionary.Add(passenger.Transform, passenger.Transform.GetComponent<CollisionController>());
-            }
+		float Ease(float x)
+		{
+			float a = easeAmount + 1;
+			return Mathf.Pow(x, a) / (Mathf.Pow(x, a) + Mathf.Pow(1 - x, a));
+		}
 
-            if (passenger.MoveBeforePlatform == beforeMovePlatform)
-            {
-                passengerDictionary[passenger.Transform].Move(passenger.Velocity, passenger.StandingOnPlatform);
-            }
-        }
-    }
+		Vector3 CalculatePlatformMovement()
+		{
 
-    private void CalculatePassengerMovement(Vector2 velocity)
-    {
-        var movedPassengers = new HashSet<Transform>();
-        passengerMovement = new List<PassengerMovement>();
+			if (Time.time < nextMoveTime)
+			{
+				return Vector3.zero;
+			}
 
-        var directionX = Mathf.Sign(velocity.x);
-        var directionY = Mathf.Sign(velocity.y);
+			fromWaypointIndex %= globalWaypoints.Length;
+			int toWaypointIndex = (fromWaypointIndex + 1) % globalWaypoints.Length;
+			float distanceBetweenWaypoints = Vector3.Distance(globalWaypoints[fromWaypointIndex], globalWaypoints[toWaypointIndex]);
+			percentBetweenWaypoints += Time.deltaTime * speed / distanceBetweenWaypoints;
+			percentBetweenWaypoints = Mathf.Clamp01(percentBetweenWaypoints);
+			float easedPercentBetweenWaypoints = Ease(percentBetweenWaypoints);
 
-        //vertically moving platform
-        if (velocity.y != 0)
-        {
-            var rayLength = Mathf.Abs(velocity.y) + skinWidth;
+			Vector3 newPos = Vector3.Lerp(globalWaypoints[fromWaypointIndex], globalWaypoints[toWaypointIndex], easedPercentBetweenWaypoints);
 
-            for (int i = 0; i < verticalRayCount; i++)
-            {
-                var rayOrigin = (directionY == -1) ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
-                rayOrigin += Vector2.right * (verticalRaySpacing * i);
-                var hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, passengerMask);
+			if (percentBetweenWaypoints >= 1)
+			{
+				percentBetweenWaypoints = 0;
+				fromWaypointIndex++;
 
-                if (hit && hit.distance != 0)
-                {
-                    if (!movedPassengers.Contains(hit.transform))
-                    {
-                        var pushY = velocity.y - (hit.distance - skinWidth) * directionY;
-                        var pushX = (directionY == 1) ? velocity.x : 0f;
+				if (!cyclic)
+				{
+					if (fromWaypointIndex >= globalWaypoints.Length - 1)
+					{
+						fromWaypointIndex = 0;
+						System.Array.Reverse(globalWaypoints);
+					}
+				}
+				nextMoveTime = Time.time + waitTime;
+			}
 
-                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector2(pushX, pushY), directionY == 1, true));                   
-                    }
-                }
-            }
-        }
-        //horizontally moving platform
-        if (velocity.x != 0)
-        {
-            var rayLength = Mathf.Abs(velocity.x) + skinWidth;
+			return newPos - transform.position;
+		}
 
-            for (int i = 0; i < horizontalRayCount; i++)
-            {
-                var rayOrigin = (directionX == -1) ? raycastOrigins.bottomLeft : raycastOrigins.bottomRight;
-                rayOrigin += Vector2.up * (horizontalRaySpacing * i);
-                var hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, passengerMask);
+		void MovePassengers(bool beforeMovePlatform)
+		{
+			foreach (PassengerMovement passenger in passengerMovement)
+			{
+				if (!passengerDictionary.ContainsKey(passenger.transform))
+				{
+					passengerDictionary.Add(passenger.transform, passenger.transform.GetComponent<Controller2D>());
+				}
 
-                if (hit && hit.distance != 0)
-                {
-                    if (!movedPassengers.Contains(hit.transform))
-                    {
-                        var pushY = -skinWidth;
-                        var pushX = velocity.x - (hit.distance - skinWidth) * directionX;
+				if (passenger.moveBeforePlatform == beforeMovePlatform)
+				{
+					passengerDictionary[passenger.transform].Move(passenger.velocity, passenger.standingOnPlatform);
+				}
+			}
+		}
 
-                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector2(pushX, pushY), false, true));
-                    }
-                }
-            }
-        }
+		void CalculatePassengerMovement(Vector3 velocity)
+		{
+			HashSet<Transform> movedPassengers = new HashSet<Transform>();
+			passengerMovement = new List<PassengerMovement>();
 
-        //Passenger on top of a horizontally or downward moving platform
-        if (directionY == -1 || velocity.y == 0 && velocity.x != 0)
-        {
-            var rayLength = skinWidth * 2;
+			float directionX = Mathf.Sign(velocity.x);
+			float directionY = Mathf.Sign(velocity.y);
 
-            for (int i = 0; i < verticalRayCount; i++)
-            {
-                var rayOrigin = raycastOrigins.topLeft + Vector2.right * (verticalRaySpacing * i);
-                var hit = Physics2D.Raycast(rayOrigin, Vector2.up, rayLength, passengerMask);
+			// Vertically moving platform
+			if (velocity.y != 0)
+			{
+				float rayLength = Mathf.Abs(velocity.y) + skinWidth;
 
-                if (hit && hit.distance != 0)
-                {
-                    if (!movedPassengers.Contains(hit.transform))
-                    {
-                        var pushY = velocity.y;
-                        var pushX = velocity.x;
+				for (int i = 0; i < verticalRayCount; i++)
+				{
+					Vector2 rayOrigin = (directionY == -1) ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
+					rayOrigin += Vector2.right * (verticalRaySpacing * i);
+					RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up * directionY, rayLength, passengerMask);
 
-                        passengerMovement.Add(new PassengerMovement(hit.transform, new Vector2(pushX, pushY), true, false));
-                    }
-                }
-            }
-        }
-    }
+					if (hit && hit.distance != 0)
+					{
+						if (!movedPassengers.Contains(hit.transform))
+						{
+							movedPassengers.Add(hit.transform);
+							float pushX = (directionY == 1) ? velocity.x : 0;
+							float pushY = velocity.y - (hit.distance - skinWidth) * directionY;
 
-    private void OnDrawGizmos()
-    {
-        if (localWaypoints != null)
-        {
-            Gizmos.color = Color.red;
-            var size = .3f;
-            for (int i = 0; i < localWaypoints.Length; i++)
-            {
-                var globalWaypointPos = (Application.isPlaying)? globalWaypoints[i] : localWaypoints[i] + transform.position;
-                Gizmos.DrawLine(globalWaypointPos - Vector3.up * size, globalWaypointPos + Vector3.up * size);
-                Gizmos.DrawLine(globalWaypointPos - Vector3.left * size, globalWaypointPos + Vector3.left * size);
-            }
-        }
-    }
+							passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), directionY == 1, true));
+						}
+					}
+				}
+			}
 
-    struct PassengerMovement
-    {
-        public PassengerMovement(Transform transform, Vector2 velocity, bool standingOnPlatform, bool moveBeforePlatform)
-        {
-            Transform = transform;
-            Velocity = velocity;
-            StandingOnPlatform = standingOnPlatform;
-            MoveBeforePlatform = moveBeforePlatform;
-        }
+			// Horizontally moving platform
+			if (velocity.x != 0)
+			{
+				float rayLength = Mathf.Abs(velocity.x) + skinWidth;
 
-        public Transform Transform;
-        public Vector2 Velocity;
-        public bool StandingOnPlatform;
-        public bool MoveBeforePlatform;
-    }
+				for (int i = 0; i < horizontalRayCount; i++)
+				{
+					Vector2 rayOrigin = (directionX == -1) ? raycastOrigins.bottomLeft : raycastOrigins.bottomRight;
+					rayOrigin += Vector2.up * (horizontalRaySpacing * i);
+					RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, passengerMask);
+
+					if (hit && hit.distance != 0)
+					{
+						if (!movedPassengers.Contains(hit.transform))
+						{
+							movedPassengers.Add(hit.transform);
+							float pushX = velocity.x - (hit.distance - skinWidth) * directionX;
+							float pushY = -skinWidth;
+
+							passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), false, true));
+						}
+					}
+				}
+			}
+
+			// Passenger on top of a horizontally or downward moving platform
+			if (directionY == -1 || velocity.y == 0 && velocity.x != 0)
+			{
+				float rayLength = skinWidth * 2;
+
+				for (int i = 0; i < verticalRayCount; i++)
+				{
+					Vector2 rayOrigin = raycastOrigins.topLeft + Vector2.right * (verticalRaySpacing * i);
+					RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.up, rayLength, passengerMask);
+
+					if (hit && hit.distance != 0)
+					{
+						if (!movedPassengers.Contains(hit.transform))
+						{
+							movedPassengers.Add(hit.transform);
+							float pushX = velocity.x;
+							float pushY = velocity.y;
+
+							passengerMovement.Add(new PassengerMovement(hit.transform, new Vector3(pushX, pushY), true, false));
+						}
+					}
+				}
+			}
+		}
+
+		struct PassengerMovement
+		{
+			public Transform transform;
+			public Vector3 velocity;
+			public bool standingOnPlatform;
+			public bool moveBeforePlatform;
+
+			public PassengerMovement(Transform _transform, Vector3 _velocity, bool _standingOnPlatform, bool _moveBeforePlatform)
+			{
+				transform = _transform;
+				velocity = _velocity;
+				standingOnPlatform = _standingOnPlatform;
+				moveBeforePlatform = _moveBeforePlatform;
+			}
+		}
+
+		void OnDrawGizmos()
+		{
+			if (localWaypoints != null)
+			{
+				Gizmos.color = Color.red;
+				float size = .3f;
+
+				for (int i = 0; i < localWaypoints.Length; i++)
+				{
+					Vector3 globalWaypointPos = (Application.isPlaying) ? globalWaypoints[i] : localWaypoints[i] + transform.position;
+					Gizmos.DrawLine(globalWaypointPos - Vector3.up * size, globalWaypointPos + Vector3.up * size);
+					Gizmos.DrawLine(globalWaypointPos - Vector3.left * size, globalWaypointPos + Vector3.left * size);
+				}
+			}
+		}
+	}
 }
+
