@@ -8,7 +8,7 @@ public abstract class InputController : ScriptableObject
 
     public abstract float GetVerticalInput();
 
-    public abstract bool GetJumpInput();
+    public abstract bool GetJumpDown();
 
-    public abstract bool GetJumpRelease();
+    public abstract bool GetJumpUp();
 }

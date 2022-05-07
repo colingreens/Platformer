@@ -1,32 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Platformer.Controller 
 {
-    [RequireComponent(typeof(Player))]
-    public class PlayerInput : MonoBehaviour
-	{
-		Player player;
+    [CreateAssetMenu(fileName = "PlayerInput", menuName = "InputController/PlayerController")]
+    public class PlayerInput : InputController
+    {
+        public override bool GetJumpDown()
+        {
+            return Input.GetButtonDown("Jump");
+        }
 
-		void Start()
-		{
-			player = GetComponent<Player>();
-		}
+        public override bool GetJumpUp()
+        {
+            return Input.GetButtonUp("Jump");
+        }
 
-		void Update()
-		{
-			Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-			player.SetDirectionalInput(directionalInput);
+        public override float GetMoveInput()
+        {
+            return Input.GetAxisRaw("Horizontal");
+        }
 
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
-				player.OnJumpInputDown();
-			}
-			if (Input.GetKeyUp(KeyCode.Space))
-			{
-				player.OnJumpInputUp();
-			}
-		}
-	}
+        public override float GetVerticalInput()
+        {
+            return Input.GetAxisRaw("Vertical");
+        }
+    }
 }

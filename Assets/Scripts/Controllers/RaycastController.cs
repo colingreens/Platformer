@@ -23,7 +23,7 @@ namespace Platformer.Controller
 		public float verticalRaySpacing;
 
 		[HideInInspector]
-		public BoxCollider2D collider;
+		public new BoxCollider2D collider;
 		public RaycastOrigins raycastOrigins;
 
 		public virtual void Awake()
@@ -38,7 +38,7 @@ namespace Platformer.Controller
 
 		public void UpdateRaycastOrigins()
 		{
-			Bounds bounds = collider.bounds;
+            Bounds bounds = collider.bounds;
 			bounds.Expand(skinWidth * -2);
 
 			raycastOrigins.bottomLeft = new Vector2(bounds.min.x, bounds.min.y);
@@ -49,7 +49,7 @@ namespace Platformer.Controller
 
 		public void CalculateRaySpacing()
 		{
-			Bounds bounds = collider.bounds;
+            Bounds bounds = collider.bounds;
 			bounds.Expand(skinWidth * -2);
 
 			float boundsWidth = bounds.size.x;
