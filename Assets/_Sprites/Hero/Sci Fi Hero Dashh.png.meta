@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f84541757f729694680123db5444ca99
+guid: 266c0273cccdc3145845326604536100
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run & Hop_0
+      name: Sci Fi Hero Dashh_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 657
-        width: 18
-        height: 16
+        x: 0
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9ec8c5f8446feb41a6b61bfce8b2bf9
-      internalID: -1462950290
+      spriteID: 1c9ecba9a7ce6c249b4d06bf836cde89
+      internalID: -1535508878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_1
+      name: Sci Fi Hero Dashh_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 592
-        width: 16
-        height: 16
+        x: 64
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3376cd9876815f43889a025a8198a8b
-      internalID: 1966798215
+      spriteID: a5206dc78d332c14482f877ba6b01e37
+      internalID: -655888924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_2
+      name: Sci Fi Hero Dashh_2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 528
-        width: 12
-        height: 16
+        x: 128
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa8ab57ff690d2c469ce26d69dbb9cf5
-      internalID: -697088982
+      spriteID: 129cfea700afaef4a90d4ff7ca6de0cc
+      internalID: -1095949029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_3
+      name: Sci Fi Hero Dashh_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 465
-        width: 9
-        height: 16
+        x: 192
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e645c3ec7cf3e47b31167cf2029779
-      internalID: 1954310744
+      spriteID: 0c7d8a32f98c2cd4b9a3bfe2688a5eb7
+      internalID: 1085628334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_4
+      name: Sci Fi Hero Dashh_4
       rect:
         serializedVersion: 2
-        x: 50
-        y: 400
-        width: 7
-        height: 16
+        x: 256
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b18d40fdff60374fbd3f259dfb4eaf8
-      internalID: -1746864635
+      spriteID: 52b3c1ba96d711042b0e37bbc9a6372a
+      internalID: 914698638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_5
+      name: Sci Fi Hero Dashh_5
       rect:
         serializedVersion: 2
-        x: 49
-        y: 336
-        width: 16
-        height: 16
+        x: 320
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce542b7c2a04df34b89eb0aa22d3bb54
-      internalID: -1099689909
+      spriteID: d732c660e6a1dc849ab9dc98176b005d
+      internalID: -1611977845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_6
+      name: Sci Fi Hero Dashh_6
       rect:
         serializedVersion: 2
-        x: 49
-        y: 273
-        width: 16
-        height: 16
+        x: 384
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,92 +244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 836d186706a83244da33c6464b0abb55
-      internalID: 891095877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run & Hop_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 209
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d09fe081dac1110429ef5a6d66031de2
-      internalID: -948420216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run & Hop_8
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 146
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a7e6f3ab418c78478f79f750273bb81
-      internalID: 895225727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run & Hop_9
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 81
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd7eeead40e5b524e906e213da840eb1
-      internalID: -166317578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run & Hop_10
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 16
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42f273c8d9132064496530eee17a62d0
-      internalID: 353849523
+      spriteID: be9d774d6cdfa994b832c89a5d25b3f7
+      internalID: 1420382419
       vertices: []
       indices: 
       edges: []
@@ -345,17 +261,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Run & Hop_9: -166317578
-      Run & Hop_2: -697088982
-      Run & Hop_7: -948420216
-      Run & Hop_3: 1954310744
-      Run & Hop_5: -1099689909
-      Run & Hop_4: -1746864635
-      Run & Hop_10: 353849523
-      Run & Hop_6: 891095877
-      Run & Hop_0: -1462950290
-      Run & Hop_8: 895225727
-      Run & Hop_1: 1966798215
+      Sci Fi Hero Dashh_4: 914698638
+      Sci Fi Hero Dashh_3: 1085628334
+      Sci Fi Hero Dashh_1: -655888924
+      Sci Fi Hero Dashh_5: -1611977845
+      Sci Fi Hero Dashh_6: 1420382419
+      Sci Fi Hero Dashh_2: -1095949029
+      Sci Fi Hero Dashh_0: -1535508878
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aca5dab3b3af75a4aa6795af79e1a2e2
+guid: 81b572b4184adcd46a6d406d4a911003
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: improved run_0
+      name: Sci Fi Hero Hop_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 337
-        width: 18
-        height: 16
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e35901107bbebe441bea9f620eb876db
-      internalID: -968779620
+      spriteID: 640af2cf987b2624493c1dd8b3e21a2a
+      internalID: -1628368200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_1
+      name: Sci Fi Hero Hop_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 272
-        width: 16
-        height: 16
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1e30e065f393054db03cecce0e108da
-      internalID: 679601536
+      spriteID: 2c679d9853edfd942ab41952c9b24ad9
+      internalID: -358395631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_2
+      name: Sci Fi Hero Hop_2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 208
-        width: 12
-        height: 15
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f114d80fa7caca4d816e3d2681b93cf
-      internalID: -1248973312
+      spriteID: bd20d583779c09d4bae362ba24f20cf1
+      internalID: 866448837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_3
+      name: Sci Fi Hero Hop_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 145
-        width: 9
-        height: 16
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 603bf4092970fad459c5a17e5df8e8df
-      internalID: 392836400
+      spriteID: 1d81b9411937623418f1cc08aae673e2
+      internalID: 374076627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_4
+      name: Sci Fi Hero Hop_4
       rect:
         serializedVersion: 2
-        x: 50
-        y: 81
-        width: 8
-        height: 15
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,29 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beddf46ac1372c74c845bb2986185b36
-      internalID: -198228233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: improved run_5
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 16
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0de4c681893aa44b844df08507e6fb5
-      internalID: 426282447
+      spriteID: db8a2fee29efdf34794506777eec78c2
+      internalID: 1128724959
       vertices: []
       indices: 
       edges: []
@@ -240,12 +219,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      improved run_1: 679601536
-      improved run_3: 392836400
-      improved run_0: -968779620
-      improved run_2: -1248973312
-      improved run_5: 426282447
-      improved run_4: -198228233
+      Sci Fi Hero Hop_1: -358395631
+      Sci Fi Hero Hop_4: 1128724959
+      Sci Fi Hero Hop_0: -1628368200
+      Sci Fi Hero Hop_2: 866448837
+      Sci Fi Hero Hop_3: 374076627
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
