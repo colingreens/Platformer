@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f84541757f729694680123db5444ca99
+guid: 4a0213325868e494da984711695fe37e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run & Hop_0
+      name: Sci Fi Hero Attacks_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 657
-        width: 18
-        height: 16
+        x: 0
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9ec8c5f8446feb41a6b61bfce8b2bf9
-      internalID: -1462950290
+      spriteID: 0f130420fc9107b408235ac86e1be13a
+      internalID: 1983566897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_1
+      name: Sci Fi Hero Attacks_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 592
-        width: 16
-        height: 16
+        x: 64
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3376cd9876815f43889a025a8198a8b
-      internalID: 1966798215
+      spriteID: 4af3ed02c56bde94e972203f9a18bf46
+      internalID: -1965310761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_2
+      name: Sci Fi Hero Attacks_2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 528
-        width: 12
-        height: 16
+        x: 128
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa8ab57ff690d2c469ce26d69dbb9cf5
-      internalID: -697088982
+      spriteID: 1eb6c68bee695e240ab172625880e41c
+      internalID: 832991326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_3
+      name: Sci Fi Hero Attacks_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 465
-        width: 9
-        height: 16
+        x: 192
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e645c3ec7cf3e47b31167cf2029779
-      internalID: 1954310744
+      spriteID: d1e3206fe78f5f14b883e2277cfd810d
+      internalID: -1886499241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_4
+      name: Sci Fi Hero Attacks_4
       rect:
         serializedVersion: 2
-        x: 50
-        y: 400
-        width: 7
-        height: 16
+        x: 256
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b18d40fdff60374fbd3f259dfb4eaf8
-      internalID: -1746864635
+      spriteID: 6da9c2daddadf5d4eaeaf2e2b70be847
+      internalID: -701580658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_5
+      name: Sci Fi Hero Attacks_5
       rect:
         serializedVersion: 2
-        x: 49
-        y: 336
-        width: 16
-        height: 16
+        x: 320
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce542b7c2a04df34b89eb0aa22d3bb54
-      internalID: -1099689909
+      spriteID: 64520932abe7cda4db83e4411f1a19a3
+      internalID: 863000628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_6
+      name: Sci Fi Hero Attacks_6
       rect:
         serializedVersion: 2
-        x: 49
-        y: 273
-        width: 16
-        height: 16
+        x: 384
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 836d186706a83244da33c6464b0abb55
-      internalID: 891095877
+      spriteID: f7c97ef99f00e5946a24c1c4b13f7c84
+      internalID: 1159963599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_7
+      name: Sci Fi Hero Attacks_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 209
-        width: 16
-        height: 16
+        x: 448
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d09fe081dac1110429ef5a6d66031de2
-      internalID: -948420216
+      spriteID: e991f47fc92d86a43a053077af88c77e
+      internalID: 132994503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_8
+      name: Sci Fi Hero Attacks_8
       rect:
         serializedVersion: 2
-        x: 48
-        y: 146
-        width: 16
-        height: 15
+        x: 512
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a7e6f3ab418c78478f79f750273bb81
-      internalID: 895225727
+      spriteID: 62b898119a84f334c9368bcde2cabf75
+      internalID: 1759159669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_9
+      name: Sci Fi Hero Attacks_9
       rect:
         serializedVersion: 2
-        x: 48
-        y: 81
-        width: 17
-        height: 16
+        x: 576
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7eeead40e5b524e906e213da840eb1
-      internalID: -166317578
+      spriteID: 047c74a0484c3624d86337b9a6283f3f
+      internalID: 1380705487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run & Hop_10
+      name: Sci Fi Hero Attacks_10
       rect:
         serializedVersion: 2
-        x: 49
-        y: 16
-        width: 16
-        height: 15
+        x: 640
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,8 +328,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42f273c8d9132064496530eee17a62d0
-      internalID: 353849523
+      spriteID: c5d3ee0bde26c36489f2aa5c26128885
+      internalID: -58891085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci Fi Hero Attacks_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848027a4c9eb06c42a232604a0c867ba
+      internalID: 1614559300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci Fi Hero Attacks_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6becec132a28d3a45b446fd3eabd1715
+      internalID: -1253980501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci Fi Hero Attacks_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d527165141a1ab44ead753f756569c3a
+      internalID: 802312926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci Fi Hero Attacks_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e8ee8ccffb1984e8aa48e167a31af6
+      internalID: -145387146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci Fi Hero Attacks_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83948dd576a6fbe44b7a3bb074375163
+      internalID: -658331620
       vertices: []
       indices: 
       edges: []
@@ -345,17 +450,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Run & Hop_9: -166317578
-      Run & Hop_2: -697088982
-      Run & Hop_7: -948420216
-      Run & Hop_3: 1954310744
-      Run & Hop_5: -1099689909
-      Run & Hop_4: -1746864635
-      Run & Hop_10: 353849523
-      Run & Hop_6: 891095877
-      Run & Hop_0: -1462950290
-      Run & Hop_8: 895225727
-      Run & Hop_1: 1966798215
+      Sci Fi Hero Attacks_13: 802312926
+      Sci Fi Hero Attacks_2: 832991326
+      Sci Fi Hero Attacks_5: 863000628
+      Sci Fi Hero Attacks_3: -1886499241
+      Sci Fi Hero Attacks_0: 1983566897
+      Sci Fi Hero Attacks_7: 132994503
+      Sci Fi Hero Attacks_4: -701580658
+      Sci Fi Hero Attacks_10: -58891085
+      Sci Fi Hero Attacks_9: 1380705487
+      Sci Fi Hero Attacks_15: -658331620
+      Sci Fi Hero Attacks_12: -1253980501
+      Sci Fi Hero Attacks_8: 1759159669
+      Sci Fi Hero Attacks_14: -145387146
+      Sci Fi Hero Attacks_1: -1965310761
+      Sci Fi Hero Attacks_6: 1159963599
+      Sci Fi Hero Attacks_11: 1614559300
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

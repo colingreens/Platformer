@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aca5dab3b3af75a4aa6795af79e1a2e2
+guid: 266c0273cccdc3145845326604536100
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: improved run_0
+      name: Sci Fi Hero Dashh_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 337
-        width: 18
-        height: 16
+        x: 0
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e35901107bbebe441bea9f620eb876db
-      internalID: -968779620
+      spriteID: 1c9ecba9a7ce6c249b4d06bf836cde89
+      internalID: -1535508878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_1
+      name: Sci Fi Hero Dashh_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 272
-        width: 16
-        height: 16
+        x: 64
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1e30e065f393054db03cecce0e108da
-      internalID: 679601536
+      spriteID: a5206dc78d332c14482f877ba6b01e37
+      internalID: -655888924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_2
+      name: Sci Fi Hero Dashh_2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 208
-        width: 12
-        height: 15
+        x: 128
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f114d80fa7caca4d816e3d2681b93cf
-      internalID: -1248973312
+      spriteID: 129cfea700afaef4a90d4ff7ca6de0cc
+      internalID: -1095949029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_3
+      name: Sci Fi Hero Dashh_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 145
-        width: 9
-        height: 16
+        x: 192
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 603bf4092970fad459c5a17e5df8e8df
-      internalID: 392836400
+      spriteID: 0c7d8a32f98c2cd4b9a3bfe2688a5eb7
+      internalID: 1085628334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_4
+      name: Sci Fi Hero Dashh_4
       rect:
         serializedVersion: 2
-        x: 50
-        y: 81
-        width: 8
-        height: 15
+        x: 256
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beddf46ac1372c74c845bb2986185b36
-      internalID: -198228233
+      spriteID: 52b3c1ba96d711042b0e37bbc9a6372a
+      internalID: 914698638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: improved run_5
+      name: Sci Fi Hero Dashh_5
       rect:
         serializedVersion: 2
-        x: 49
-        y: 16
-        width: 16
-        height: 15
+        x: 320
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +223,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0de4c681893aa44b844df08507e6fb5
-      internalID: 426282447
+      spriteID: d732c660e6a1dc849ab9dc98176b005d
+      internalID: -1611977845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci Fi Hero Dashh_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9d774d6cdfa994b832c89a5d25b3f7
+      internalID: 1420382419
       vertices: []
       indices: 
       edges: []
@@ -240,12 +261,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      improved run_1: 679601536
-      improved run_3: 392836400
-      improved run_0: -968779620
-      improved run_2: -1248973312
-      improved run_5: 426282447
-      improved run_4: -198228233
+      Sci Fi Hero Dashh_4: 914698638
+      Sci Fi Hero Dashh_3: 1085628334
+      Sci Fi Hero Dashh_1: -655888924
+      Sci Fi Hero Dashh_5: -1611977845
+      Sci Fi Hero Dashh_6: 1420382419
+      Sci Fi Hero Dashh_2: -1095949029
+      Sci Fi Hero Dashh_0: -1535508878
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
