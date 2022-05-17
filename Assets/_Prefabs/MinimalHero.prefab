@@ -34,7 +34,7 @@ GameObject:
   - component: {fileID: 7123466812816916355}
   - component: {fileID: 5312604394101798152}
   m_Layer: 9
-  m_Name: MinimalPlayer
+  m_Name: MinimalHero
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -318155717, guid: 21c8224185937c74698af05e6d537000, type: 3}
+  m_Sprite: {fileID: -847943952, guid: 83e3e32eba84d504f9b62af5eb749f56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50734067, y: 0.8147006}
+  m_Size: {x: 0.36754835, y: 0.8147006}
   m_EdgeRadius: 0
 --- !u!114 &4489345220145489007
 MonoBehaviour:
@@ -708,7 +708,8 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 0}
+  InitialWeapon: {fileID: 291923255354910121, guid: 09a301283a1eaf9498ae084d69099a72,
+    type: 3}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 0}
   ForceWeaponScaleResetOnEquip: 0
