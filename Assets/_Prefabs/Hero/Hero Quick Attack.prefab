@@ -135,12 +135,12 @@ MonoBehaviour:
   DamageAreaShape: 1
   AreaSize: {x: 0.75, y: 1}
   AreaOffset: {x: 0.65, y: -0.1}
-  InitialDelay: 0.04
+  InitialDelay: 0.1
   ActiveDuration: 0.5
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 8192
   DamageCaused: 10
-  Knockback: 0
+  Knockback: 2
   KnockbackForce: {x: 10, y: 2}
   InvincibilityDuration: 0.5
