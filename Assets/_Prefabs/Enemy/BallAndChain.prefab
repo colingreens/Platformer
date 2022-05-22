@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4020280555775592922}
   - component: {fileID: 1225720842729415793}
   - component: {fileID: 2357924358316752546}
+  - component: {fileID: 3187024385428132278}
   - component: {fileID: 875857124889352435}
   - component: {fileID: 5434278575053068467}
   - component: {fileID: 6719461576221411368}
@@ -22,7 +23,6 @@ GameObject:
   - component: {fileID: 6998266373933922863}
   - component: {fileID: 2761365553107315819}
   - component: {fileID: 22192488707383511}
-  - component: {fileID: 3187024385428132278}
   m_Layer: 13
   m_Name: BallAndChain
   m_TagString: Untagged
@@ -166,7 +166,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.09}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -177,8 +177,28 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0536213, y: 1.3545306}
+  m_Size: {x: 0.9, y: 1.59}
   m_EdgeRadius: 0
+--- !u!95 &3187024385428132278
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248108631583332918}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ccd751988ee22a4fb65f1637baa2313, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &875857124889352435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,7 +325,7 @@ MonoBehaviour:
   ImmuneToKnockback: 0
   DeathFeedbacks: {fileID: 0}
   DestroyOnDeath: 1
-  DelayBeforeDestruction: 0
+  DelayBeforeDestruction: 2
   CollisionsOffOnDeath: 1
   GravityOffOnDeath: 0
   PointsWhenDestroyed: 0
@@ -507,23 +527,3 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 264448
   ResetPositionOnDeath: 1
---- !u!95 &3187024385428132278
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248108631583332918}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8ccd751988ee22a4fb65f1637baa2313, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
