@@ -630,6 +630,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThreeSaber
       objectReference: {fileID: 0}
+    - target: {fileID: 5456993302792527685, guid: ffeb129be5aaae443a976af30bc846ae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffeb129be5aaae443a976af30bc846ae, type: 3}
 --- !u!1001 &920433731
@@ -742,6 +747,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6be6b5536e7cdfa4b8dea369e32707e5, type: 3}
+--- !u!114 &1041794576 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6998266373933922863, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+    type: 3}
+  m_PrefabInstance: {fileID: 1295989206}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a07c6668aa55403790d27b575279549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072031669
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +977,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BallAndChain
       objectReference: {fileID: 0}
+    - target: {fileID: 1661544050198310430, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: TargetHandleWeapon
+      value: 
+      objectReference: {fileID: 1041794576}
+    - target: {fileID: 4418836995324634150, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: States.Array.data[2].Transitions.array.Array.data[0].TrueState
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6903961077705817397, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
         type: 3}
       propertyPath: m_RootOrder
@@ -1014,6 +1041,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998266373933922863, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: CanPickupWeapons
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9034953052042560107, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: Radius
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607, type: 3}
