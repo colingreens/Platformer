@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21c8224185937c74698af05e6d537000
+guid: c0caa7be2fa9ea64cb64ec41754a592c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sci Fi Hero Idle_0
+      name: run_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 19
+        y: 532
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39d70dde33a314c43a17bd750d6fcca4
-      internalID: -318155717
+      spriteID: ed0e93a5fc1019243ac65d907ca20a32
+      internalID: -1067600359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sci Fi Hero Idle_1
+      name: run_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 19
+        y: 459
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f13bbe65f4bbda74c9cdc5b2083dd1be
-      internalID: 1944275952
+      spriteID: e6040fe524f6d1448bc79261fc6dc785
+      internalID: 1321494403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sci Fi Hero Idle_2
+      name: run_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 19
+        y: 384
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23fc9da82908ab045a17f66f55ab4741
-      internalID: -1066836692
+      spriteID: aa3b2e1ed136f6447a486cba25250959
+      internalID: 963310806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sci Fi Hero Idle_3
+      name: run_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 19
+        y: 306
+        width: 22
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +181,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f00f9a9fef7a27745bc36b675f42821f
-      internalID: 482397001
+      spriteID: 15bf7fb2f505f3c429eb4919b9aaf591
+      internalID: -1574394061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 228
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34db8ccac3f5cf4da1cd138d1b07e1d
+      internalID: 453075930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 155
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd55e3f8dc102ea4c95c5ce98e419808
+      internalID: -1849304336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 80
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fa9c5719afdf04dbcdbca98cfda6a4
+      internalID: -21926684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de70b432cc3dec24d8b5d389b0512aca
+      internalID: 527850775
       vertices: []
       indices: 
       edges: []
@@ -198,10 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sci Fi Hero Idle_2: -1066836692
-      Sci Fi Hero Idle_1: 1944275952
-      Sci Fi Hero Idle_0: -318155717
-      Sci Fi Hero Idle_3: 482397001
+      run_1: 1321494403
+      run_2: 963310806
+      run_4: 453075930
+      run_5: -1849304336
+      run_7: 527850775
+      run_0: -1067600359
+      run_3: -1574394061
+      run_6: -21926684
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
