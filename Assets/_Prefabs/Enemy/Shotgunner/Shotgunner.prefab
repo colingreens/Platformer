@@ -18,23 +18,13 @@ GameObject:
   - component: {fileID: 5537956774299031759}
   - component: {fileID: 5537956774299031758}
   - component: {fileID: 5537956774299031757}
-  - component: {fileID: 5537956774299031756}
   - component: {fileID: 5537956774299031755}
-  - component: {fileID: 5537956774299031754}
   - component: {fileID: 5537956774299031753}
   - component: {fileID: 5537956774299031752}
-  - component: {fileID: 5537956774299031767}
-  - component: {fileID: 5537956774299031766}
-  - component: {fileID: 5537956774299031765}
-  - component: {fileID: 5537956774299031764}
-  - component: {fileID: 5537956774299031763}
-  - component: {fileID: 5537956774299031762}
   - component: {fileID: 5537956774299031761}
-  - component: {fileID: 5537956774299031760}
-  - component: {fileID: 5537956774299031775}
   - component: {fileID: 5537956774299031774}
   - component: {fileID: 5537956774299031773}
-  - component: {fileID: 5537956774299031772}
+  - component: {fileID: 1529370612}
   m_Layer: 13
   m_Name: Shotgunner
   m_TagString: Untagged
@@ -324,8 +314,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentHealth: 0
-  InitialHealth: 10
-  MaximumHealth: 10
+  InitialHealth: 60
+  MaximumHealth: 60
   Invulnerable: 0
   TemporarilyInvulnerable: 0
   PostDamageInvulnerable: 0
@@ -337,7 +327,7 @@ MonoBehaviour:
   ImmuneToKnockback: 0
   DeathFeedbacks: {fileID: 0}
   DestroyOnDeath: 1
-  DelayBeforeDestruction: 0
+  DelayBeforeDestruction: 2
   CollisionsOffOnDeath: 1
   GravityOffOnDeath: 0
   PointsWhenDestroyed: 0
@@ -396,31 +386,6 @@ MonoBehaviour:
   TouchTheGroundFeedback: {fileID: 0}
   MinimumAirTimeBeforeFeedback: 0.2
   StopWalkingWhenCollidingWithAWall: 0
---- !u!114 &5537956774299031756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071d2257235e403da6c6a0a966d6683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  CrawlAuthorized: 1
-  CrawlSpeed: 4
-  ResizeColliderWhenCrouched: 0
-  CrouchedBoxColliderSize: {x: 1, y: 1}
-  CanCrouchWhileMoving: 1
-  InATunnel: 0
-  MoveCameraTarget: 1
-  CameraTargetOffset: {x: 0, y: -3, z: 0}
 --- !u!114 &5537956774299031755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,25 +423,6 @@ MonoBehaviour:
   SuccessiveDashResetMethod: 0
   SuccessiveDashResetDuration: 2
   InvincibleWhileDashing: 0
---- !u!114 &5537956774299031754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 157b891c059034cea94ae0c9e235df50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  ShakeParameters: {x: 1.5, y: 0.5, z: 1}
-  DiveAcceleration: 2
 --- !u!114 &5537956774299031753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,135 +474,6 @@ MonoBehaviour:
   AirJumpFeedbacks: {fileID: 0}
   DoubleJumpFeedbacks: {fileID: 0}
   NumberOfJumpsLeft: 0
---- !u!114 &5537956774299031767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fd71e945bfcd4897b3a95607989c7d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  RunSpeed: 16
-  ReadInput: 1
-  AutoRun: 0
-  AutoRunThreshold: 0.6
---- !u!114 &5537956774299031766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d37391d2147a467db78bf732ae24daa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  MovingPlatformsJumpCollisionOffDuration: 0.05
-  ParticleEmitter: {fileID: 0}
-  JetpackForce: 2.5
-  JetpackUnlimited: 0
-  JetpackFuelDuration: 5
-  JetpackRefuelCooldown: 1
-  RefuelSpeed: 0.5
-  MinimumFuelRequirement: 0.2
-  JetpackRefueledSfx: {fileID: 0}
-  JetpackFuelDurationLeft: 0
---- !u!114 &5537956774299031765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a40489dc31af43749444be35e176198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  HorizontalInputThreshold: 0.5
-  MoveCameraTarget: 1
-  CameraTargetOffset: {x: 0, y: 6, z: 0}
---- !u!114 &5537956774299031764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c7e9428883e43cc8ce6e26ef802353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BufferDurationAfterGrip: 0.3
-  InputBasedGrip: 0
---- !u!114 &5537956774299031763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51d7707613113491a9d85f1caab5837b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  WallClingingSlowFactor: 0.6
-  RaycastVerticalOffset: 0
-  WallClingingTolerance: 0.3
-  InputIndependent: 0
---- !u!114 &5537956774299031762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeabffc5d6e694a8287c891288b0a4be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  WallJumpForce: {x: 10, y: 4}
-  ShouldReduceNumberOfJumpsLeft: 1
-  ForceMode: 0
-  ForceFlipTowardsDirection: 0
 --- !u!114 &5537956774299031761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,42 +494,6 @@ MonoBehaviour:
   LadderClimbingSpeed: 2
   ForceRightFacing: 0
   ForceAnchorToGroundOnExit: 0
---- !u!114 &5537956774299031760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59e06702d6be45948936bd909420d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
---- !u!114 &5537956774299031775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46406e788b52547b6b352456466eb58b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  PreventJumpWhenInZone: 1
-  ActivationCooldownDuration: 0
 --- !u!114 &5537956774299031774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,30 +558,19 @@ MonoBehaviour:
   HitNonDamageableFeedback: {fileID: 0}
   FreezeFramesOnHitDuration: 0
   Owner: {fileID: 0}
---- !u!114 &5537956774299031772
+--- !u!114 &1529370612
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5537956774299031768}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed782cf6d45978347bcea1b2ec201483, type: 3}
+  m_Script: {fileID: 11500000, guid: 376e9f0d57c22c64a9bcd13767d360e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WalkBehaviour: 0
-  ChangeDirectionOnWall: 1
-  AvoidFalling: 0
-  HoleDetectionOffset: {x: 0, y: 0, z: 0}
-  HoleDetectionRaycastLength: 1
-  ViewDistance: 10
+  RunDistance: 10
+  WalkDistance: 5
   StopDistance: 1
-  MoveOnSightRayOffset: {x: 0, y: 0, z: 0}
-  MoveOnSightLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  MoveOnSightObstaclesLayer:
-    serializedVersion: 2
-    m_Bits: 264448
-  ResetPositionOnDeath: 1
+  JetpackDistance: 0.2

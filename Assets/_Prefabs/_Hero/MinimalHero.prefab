@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4489345220145489007}
   - component: {fileID: 3119481105623106514}
   - component: {fileID: 1103568952209511136}
+  - component: {fileID: 5312604394101798152}
   - component: {fileID: 743231433579004998}
   - component: {fileID: 1939859659646618554}
   - component: {fileID: 3344312266961354870}
@@ -33,7 +34,6 @@ GameObject:
   - component: {fileID: 4201011335957376950}
   - component: {fileID: 7123466812816916355}
   - component: {fileID: 803652006044158179}
-  - component: {fileID: 5312604394101798152}
   m_Layer: 9
   m_Name: MinimalHero
   m_TagString: Player
@@ -49,7 +49,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4489345220145489004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.13, y: -0.469, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36754835, y: 0.8147006}
+  m_Size: {x: 0.36754835, y: 0.8652258}
   m_EdgeRadius: 0
 --- !u!114 &4489345220145489007
 MonoBehaviour:
@@ -290,6 +290,26 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &5312604394101798152
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489345220145489004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef733de5841e63c48be77b0df71ae1b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &743231433579004998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,7 +442,7 @@ MonoBehaviour:
   ResetForcesOnExit: 1
   ForceExactDistance: 0
   Aim:
-    AimControl: 2
+    AimControl: 3
     RotationMode: 0
     MinimumAngle: -180
     MaximumAngle: 180
@@ -709,7 +729,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 291923255354910121, guid: 09a301283a1eaf9498ae084d69099a72,
+  InitialWeapon: {fileID: 114066937058401760, guid: da94d05c6c38eb3469718def0a0838c1,
     type: 3}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 0}
@@ -723,7 +743,7 @@ MonoBehaviour:
   FaceWeaponDirection: 0
   InvertHorizontalAimWhenWallclinging: 0
   BufferInput: 1
-  NewInputExtendsBuffer: 0
+  NewInputExtendsBuffer: 1
   MaximumBufferDuration: 0.25
   CurrentWeapon: {fileID: 0}
 --- !u!114 &803652006044158179
@@ -760,23 +780,3 @@ MonoBehaviour:
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
   CurrentWeapon: {fileID: 0}
---- !u!95 &5312604394101798152
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4489345220145489004}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef733de5841e63c48be77b0df71ae1b1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
