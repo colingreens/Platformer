@@ -353,6 +353,37 @@ MonoBehaviour:
     ProgressBarSpeed: 5
     FadeMode: 0
     UnloadMethod: 2
+--- !u!1 &409357867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409357868}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409357868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409357867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5780976, y: -1.6843555, z: 0.7094555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &420936718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 408230, guid: ce0837de5d2b5d140aea3195484dca8a,
@@ -910,8 +941,43 @@ PrefabInstance:
       objectReference: {fileID: 1041794576}
     - target: {fileID: 4418836995324634150, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418836995324634150, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
       propertyPath: States.Array.data[2].Transitions.array.Array.data[0].TrueState
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434278575053068467, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: Invulnerable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434278575053068467, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: InitialHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434278575053068467, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: MaximumHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434278575053068467, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: FlickerColor.b
+      value: 0.0028479954
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434278575053068467, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: FlickerColor.g
+      value: 0.0028479954
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434278575053068467, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
+        type: 3}
+      propertyPath: FlickerColor.r
+      value: 0.6037736
       objectReference: {fileID: 0}
     - target: {fileID: 6903961077705817397, guid: 3c0b26fc2b0465c4fbf95d2dc62d0607,
         type: 3}
@@ -1384,6 +1450,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MinimalCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040196612289779003, guid: 67e9e6648638ca94eaaa9e41373f42f2,
+        type: 3}
+      propertyPath: m_Lens.GateFit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040196612289779003, guid: 67e9e6648638ca94eaaa9e41373f42f2,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040196612442320769, guid: 67e9e6648638ca94eaaa9e41373f42f2,
+        type: 3}
+      propertyPath: orthographic size
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 8940356102819974359, guid: 67e9e6648638ca94eaaa9e41373f42f2,
         type: 3}
