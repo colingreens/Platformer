@@ -563,16 +563,16 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
-  BlockingMovementStates: 
+  BlockingMovementStates: 01000000
   BlockingConditionStates: 
   MovingPlatformsJumpCollisionOffDuration: 0.05
   ParticleEmitter: {fileID: 0}
   JetpackForce: 2.5
   JetpackUnlimited: 0
   JetpackFuelDuration: 5
-  JetpackRefuelCooldown: 1
+  JetpackRefuelCooldown: 3
   RefuelSpeed: 0.5
-  MinimumFuelRequirement: 0.2
+  MinimumFuelRequirement: 0.5
   JetpackRefueledSfx: {fileID: 0}
   JetpackFuelDurationLeft: 0
 --- !u!114 &5450988404819237074

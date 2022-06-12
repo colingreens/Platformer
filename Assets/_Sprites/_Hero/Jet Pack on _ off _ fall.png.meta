@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 15ce38d8fded5894cadd0152f9302d9a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 705
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.6592369}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfce6c4d932408e45bbf43206d360511
+      internalID: -2044692503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 644
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.48230776, y: 0.55652046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6893d3d009f81b04ab929b9bbf3b312f
+      internalID: -652470601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 576
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.48039865, y: 0.66906166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841090c71cad80c468f8a8ba51ba5abc
+      internalID: 855259298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 512
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.6782093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94bdcac60380744f88c1319c149f8db
+      internalID: -20447979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 448
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999967, y: 0.66792107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0a5dcd5c5edd942911ee9704042d16
+      internalID: -1596609444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 384
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999967, y: 0.67841625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c712c609fe7fc4f86726b870ecb53f
+      internalID: 1446488254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 321
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.48919487, y: 0.6377697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d967b53a08b7e544495eec1536f7d3e7
+      internalID: -2014773218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 257
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.48910633, y: 0.6388941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67acada4e06da80418e4c4d5eba432c9
+      internalID: 1651608771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 194
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.51089364, y: 0.6062126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da85293bc19230c479cdcba89d17432f
+      internalID: -257077929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 130
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.48910633, y: 0.6062131}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0f259b4fb987540bb0f2489242bbf4
+      internalID: -1160880574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_10
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 66
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61438346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9336e7f4a374b4694c8faa21a60a8d
+      internalID: 239757248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jet Pack on _ off _ fall_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 2
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.6266063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9aab35d3d8e076458af9e99d5fd55f4
+      internalID: 1194285532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Jet Pack on _ off _ fall_2: 855259298
+      Jet Pack on _ off _ fall_1: -652470601
+      Jet Pack on _ off _ fall_6: -2014773218
+      Jet Pack on _ off _ fall_10: 239757248
+      Jet Pack on _ off _ fall_7: 1651608771
+      Jet Pack on _ off _ fall_3: -20447979
+      Jet Pack on _ off _ fall_9: -1160880574
+      Jet Pack on _ off _ fall_5: 1446488254
+      Jet Pack on _ off _ fall_8: -257077929
+      Jet Pack on _ off _ fall_4: -1596609444
+      Jet Pack on _ off _ fall_0: -2044692503
+      Jet Pack on _ off _ fall_11: 1194285532
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
