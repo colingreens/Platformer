@@ -132,6 +132,9 @@ EditorBuildSettings:
     path: Assets/CorgiEngine/Demos/Minimal/MinimalStairs.unity
     guid: 9494d759434f80b4381b1da2a0fa14a0
   - enabled: 1
+    path: Assets/CorgiEngine/Demos/Minimal/MinimalDamageTypes.unity
+    guid: dac9321fe171d794f9b3f600a6a9e725
+  - enabled: 1
     path: Assets/CorgiEngine/Demos/Minimal/MinimalAutoMovement.unity
     guid: 00bc6681f52186e429e065009169f47d
   - enabled: 1
