@@ -381,7 +381,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  WalkSpeed: 6
+  WalkSpeed: 8
   MovementSpeedMultiplier: 1
   AbilityMovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
@@ -515,14 +515,14 @@ MonoBehaviour:
   BlockingConditionStates: 
   NumberOfJumps: 2
   JumpHeight: 3.025
-  JumpRestrictions: 2
+  JumpRestrictions: 0
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
   JumpIsProportionalToThePressTime: 1
   JumpMinimumAirTime: 0.1
   JumpReleaseForceFactor: 2
-  CoyoteTime: 0
-  InputBufferDuration: 0
+  CoyoteTime: 0.1
+  InputBufferDuration: 0.1
   OneWayPlatformsJumpCollisionOffDuration: 0.3
   MovingPlatformsJumpCollisionOffDuration: 0.05
   AirJumpFeedbacks: {fileID: 0}
@@ -703,7 +703,8 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 0}
+  InitialWeapon: {fileID: 7896348616219275681, guid: 2782075f394e43f47bc069b4a75d114d,
+    type: 3}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 0}
   ForceWeaponScaleResetOnEquip: 0

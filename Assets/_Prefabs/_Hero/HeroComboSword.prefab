@@ -460,8 +460,10 @@ MonoBehaviour:
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
   DisplayFullDurationDetails: 0
+  PlayerTimescaleMode: 1
   CooldownDuration: 0
   InitialDelay: 0
+  CanPlay: 1
   CanPlayWhileAlreadyPlaying: 1
   ChanceToPlay: 100
   FeedbacksIntensity: 1
@@ -1011,8 +1013,10 @@ MonoBehaviour:
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
   DisplayFullDurationDetails: 0
+  PlayerTimescaleMode: 1
   CooldownDuration: 0
   InitialDelay: 0
+  CanPlay: 1
   CanPlayWhileAlreadyPlaying: 1
   ChanceToPlay: 100
   FeedbacksIntensity: 1
@@ -1562,8 +1566,10 @@ MonoBehaviour:
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
   DisplayFullDurationDetails: 0
+  PlayerTimescaleMode: 1
   CooldownDuration: 0
   InitialDelay: 0
+  CanPlay: 1
   CanPlayWhileAlreadyPlaying: 1
   ChanceToPlay: 100
   FeedbacksIntensity: 1
